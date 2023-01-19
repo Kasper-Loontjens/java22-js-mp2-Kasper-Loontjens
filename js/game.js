@@ -36,9 +36,9 @@ buttonContainer.addEventListener("click", event =>{
     
 })
 const choiceArrayImg = [
-    `<img class="imgChoice" src="/images/stone.png" alt="Rock"/>`,
-    `<img class="imgChoice" src="/images/toilet-paper.png" alt="Paper"/>`,
-    `<img class="imgChoice" src="/images/scissors.png" alt="Scissors"/>`
+    `<img class="imgChoice" src="../images/stone.png" alt="Rock"/>`,
+    `<img class="imgChoice" src="../images/toilet-paper.png" alt="Paper"/>`,
+    `<img class="imgChoice" src="../images/scissors.png" alt="Scissors"/>`
 ]
 function gameSetPlay(){
     opponentChoice = getRandomInt(3);
@@ -67,11 +67,11 @@ function gameSetPlay(){
     }
     playerScoreContainer.innerHTML ="";
     for(let i = 0; i < playerScore; i++){
-        playerScoreContainer.innerHTML += `<img class="star" src="/images/star.png" alt="Star">`
+        playerScoreContainer.innerHTML += `<img class="star" src="../images/star.png" alt="Star">`
     }
     opponentScoreContainer.innerHTML="";
     for(let i = 0; i < opponentScore; i++){
-        opponentScoreContainer.innerHTML += `<img class="star" src="/images/star.png" alt="Star">`
+        opponentScoreContainer.innerHTML += `<img class="star" src="../images/star.png" alt="Star">`
     }
     if(playerScore >2 ){
         announcement.innerText = "You Win!"
