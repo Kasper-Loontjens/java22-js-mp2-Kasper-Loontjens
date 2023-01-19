@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/js/game.js" defer></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h2 id="nameTag"></h2>
+      <div id="playerChoice">Choose</div>
+      <article>
+        <div id="buttonContainer">
+          <img
+            id="rockBtn"
+            class="imgChoice"
+            src="/images/stone.png"
+            alt="Rock"
+          />
+          <img
+            id="paperBtn"
+            class="imgChoice"
+            src="/images/toilet-paper.png"
+            alt="Paper"
+          />
+          <img
+            id="scissorsBtn"
+            class="imgChoice"
+            src="/images/scissors.png"
+            alt="Scissors"
+          />
+        </div>
+        <div id="scoreContainer">
+          <div id="playerScoreContainer" class="scoreContainer"></div>
+          <h1>VS</h1>
+          <div id="opponentScoreContainer" class="scoreContainer"></div>
+        </div>
+        <div id="opponentChoice"></div>
+      </article>
+      <h3 id="pointText"></h3>
+      <h1 id="announcement"></h1>
+    </main>
+  </body>
+</html>
